@@ -1,0 +1,35 @@
+@use '../_base/mixin' as mixin;
+@use '../_base/variable' as var;
+
+.m-tab {
+    width: 100%;
+    background-color: var.$BACKGROUND_WHITE;
+    padding: 64px 40px;
+
+    &-navigation {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+        &-item {
+            list-style: none;
+
+            &.is-active {
+                background-color: var.$TEXT_STRONG;
+            }
+        }
+    }
+
+    &-contents {
+        width: 70%;
+        margin: auto;
+
+        &-item {
+            display: none;
+
+            &.is-show {
+                display: block;
+            }
+        }
+    }
+}

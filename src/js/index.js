@@ -1,3 +1,6 @@
-import { Hello } from "/src/js/modules/hello";
+import { Tab } from "/src/js/modules/Tab";
 
-new Hello("dammy").greet();
+(()=>{
+    const tab = new Tab();
+    tab.init();
+})();
