@@ -13,7 +13,7 @@
         background-color: var.$BACKGROUND_GRAY;
     }
 
-    @include mixin.pc {
+    @include mixin.min-pc {
         &-inner {
             width: 100%;
         }

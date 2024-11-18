@@ -5,20 +5,66 @@
     width: 100%;
 
     &-inner {
+        position: relative;
         max-width: 1284px;
         margin: auto;
         padding: 20px 5vw;
         display: flex;
         justify-content: space-between;
     }
+}
 
-    &__contents {
+.l-navigation {
+    &-hamburger {
+        font-size: 0;
+    }
+
+    &-wrapper {
+        display: none;
+
+        &.is-open {
+            display: block;
+        }
+    }
+    
+    &-contents {
         display: flex;
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
 
         &-link {
             color: var.$TEXT_STRONG;
             font-size: 1.6rem;
+        }
+    }
+
+    
+    @include mixin.min-sp {
+        &-hamburger {
+            display: none;
+        }
+
+        &-wrapper {
+            display: block;
+        }
+        
+        &-contents {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+
+    @include mixin.max-sp {
+        &-wrapper {
+            position: absolute;
+            top: 55px;
+            left: 0;
+            padding: 32px 0;
+            width: 100%;
+            background-color: aqua;
+            
         }
     }
 }

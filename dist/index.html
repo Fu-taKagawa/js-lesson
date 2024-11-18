@@ -12,16 +12,23 @@
       <div class="l-header">
         <div class="l-header-inner">
           <div class="l-header__logo">logo</div>
-          <div class="l-header__contents">
-            <a href="/" class="l-header__contents-link">content</a>
-            <a href="/" class="l-header__contents-link">content</a>
-            <a href="/" class="l-header__contents-link">content</a>
+          <div class="l-navigation">
+            <button class="l-navigation-hamburger js-menu__hamburger" type="button" aria-expanded="false">開く</button>
+            <div class="l-navigation-wrapper js-menu">
+              <nav class="l-navigation-contents">
+                <a href="/" class="l-navigation-contents-link">content</a>
+                <a href="/" class="l-navigation-contents-link">content</a>
+                <a href="/" class="l-navigation-contents-link">content</a>
+                <!-- /.l-navigation-contents -->
+              </nav>
+              <!-- /.l-navigation-wrapper -->
+            </div>
+            <!-- /.l-navigation -->
           </div>
-          <!-- /.l-header__contents -->
+          <!-- /.l-header-inner -->
         </div>
-        <!-- /.l-header-inner -->
+        <!-- /.l-header -->
       </div>
-      <!-- /.l-header -->
     </header>
 
     <section class="section">
@@ -50,12 +57,14 @@
           </ul>
           <div class="m-tab-contents js-tab__contents">
             <div class="m-tab-contents-item js-tab__contents-item is-show" data-tabcontent="01" id="tab-01">
-              content01content01content01content01content01content01content01content01content01content01content01
+              <p>content01content01content01content01content01content01content01content01content01content01content01</p>
             </div>
             <div class="m-tab-contents-item js-tab__contents-item" data-tabcontent="02" id="tab-02">
-              content02content02content02content02content02content02content02content02content02content02
+              <p>content02content02content02content02content02content02content02content02content02content02</p>
             </div>
-            <div class="m-tab-contents-item js-tab__contents-item" data-tabcontent="03" id="tab-03">content03</div>
+            <div class="m-tab-contents-item js-tab__contents-item" data-tabcontent="03" id="tab-03">
+              <p>content03</p>
+            </div>
           </div>
         </div>
       </div>

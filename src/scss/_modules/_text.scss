@@ -5,7 +5,7 @@
     background-color: #f00;
     font-size: 3rem;
 
-    @include mixin.sp {
+    @include mixin.max-sp {
         background-color: #ffffae;
     }
 }

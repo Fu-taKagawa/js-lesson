@@ -4,7 +4,7 @@
 .m-tab {
     width: 100%;
     background-color: var.$BACKGROUND_WHITE;
-    padding: 64px 40px;
+    padding: 8px 0;
 
     &-navigation {
         display: flex;
@@ -23,6 +23,7 @@
     &-contents {
         width: 70%;
         margin: auto;
+        word-break: break-all;
 
         &-item {
             display: none;
@@ -31,5 +32,9 @@
                 display: block;
             }
         }
+    }
+    
+    @include mixin.min-pc {
+        padding: 64px 0;
     }
 }

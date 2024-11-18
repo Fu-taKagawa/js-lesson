@@ -5,6 +5,7 @@ export class Tab {
     }
 
     init() {
+        if (!this.tabNaviItems.length || !this.tabContents.length) return;
         this.tabNaviItems.forEach((tabNaviItem)=>{
             tabNaviItem.addEventListener('click', this.switchTab.bind(this));
         })
