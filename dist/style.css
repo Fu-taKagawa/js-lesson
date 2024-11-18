@@ -60,3 +60,30 @@ a {
 .m-headingType2 {
   font-size: 2rem;
 }
+
+.m-tab {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 64px 40px;
+}
+.m-tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.m-tab-navigation-item {
+  list-style: none;
+}
+.m-tab-navigation-item.is-active {
+  background-color: #ffc400;
+}
+.m-tab-contents {
+  width: 70%;
+  margin: auto;
+}
+.m-tab-contents-item {
+  display: none;
+}
+.m-tab-contents-item.is-show {
+  display: block;
+}
